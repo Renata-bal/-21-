@@ -1,0 +1,7 @@
+shopping_list = ["Хлеб", "Молоко", "Конфеты"]
+shopping_list.append("Яйца")
+print(shopping_list)
+
+#множество отличается от списка, т.к. порядок элементов изменился
+unique_items = set(shopping_list)
+print(unique_items)
