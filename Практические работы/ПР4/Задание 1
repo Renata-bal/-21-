@@ -1,0 +1,6 @@
+import math
+x = float(input("Введите вещественное число:"))
+
+answer = math.floor(x) + math.ceil(x)
+
+print(answer)
