@@ -1,0 +1,9 @@
+import math
+x1 = float(input("Введите число для x1:"))
+y1 = float(input("Введите число для y1:"))
+
+x2 = float(input("Введите число для x2:"))
+y2 = float(input("Введите число для y2:"))
+
+Euclidean_distance_ρ = math.sqrt((x1-x2)**2 + (y1-y2)**2)
+print("Евклидово Расстояние", Euclidean_distance_ρ)
