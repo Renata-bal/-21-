@@ -1,0 +1,7 @@
+import math
+x = float(input("Введите действительное число x, измеряемое в градусах: "))
+
+radii = math.radians(x)
+result = math.sin(radii) + math.cos(radii) + math.tan(radii) ** 2
+
+print("Значение тригонометрического выражения: ", result)
