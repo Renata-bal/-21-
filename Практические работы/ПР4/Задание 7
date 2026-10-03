@@ -1,0 +1,5 @@
+seat_number = int(input("Укажите ваше место: "))
+
+compartment_number = seat_number // 4 + 1
+
+print("Ваше место в купе: ", compartment_number)
