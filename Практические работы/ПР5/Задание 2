@@ -1,0 +1,5 @@
+weight, height = map(int, input("Введите ваш вес и рост (weight, height) через запятую: ").split(","))
+
+bmi = weight / (height ** 2)
+
+print(f"Ваш индекс массы тела составляет: {bmi:.1f}")
