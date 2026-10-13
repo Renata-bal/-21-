@@ -1,0 +1,35 @@
+def calculate_trip_liters(distance,  consumption):
+    """
+    Вычисляет необходимое кол-во бензина.
+    Args:
+        distance
+        consumption
+    Returns:
+        float: Всего литров
+    """
+    total_liters = distance * (consumption / 100)
+    return total_liters
+distance = float(input("Введите расстояние (км), которое вам нужно: "))
+consumption = float(input("Сколько литров на 100 км нужно машине: "))
+
+liters_needed = calculate_trip_liters(distance, consumption)
+
+print(f"Нужно бензина: {liters_needed:.2f} л")
+
+def  calculate_trip_cost (liters_needed, PRICE):
+    """
+    Вычисляет необходимую стоимость поездки.
+    Args:
+         liters_needed
+         PRICE
+    Returns:
+         float: Общая стоимость.
+    """
+    total_cost = liters_needed * PRICE
+    return total_cost
+
+PRICE = 49.5
+
+cost =  calculate_trip_cost (liters_needed, PRICE)
+
+print(f"Стоимость: {cost:.2f} руб.")
