@@ -1,0 +1,18 @@
+print(f"Площадь треугольника: {rectangle_area}")
+
+def calculate_circle_area(radius):
+    """
+    Вычисляет площадь круга по радиусу.
+
+    Args:
+        radius (float): радиус круга
+
+    Returns:
+        float: площадь круга
+    """
+    return math.pi * radius ** 2
+
+radius = float(input("Введите радиус круга: "))
+circle_area = calculate_circle_area(radius)
+
+print(f"Площадь круга: {circle_area:.2f}")
