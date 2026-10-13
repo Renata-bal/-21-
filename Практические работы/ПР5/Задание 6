@@ -1,0 +1,40 @@
+import math
+
+def calc_distance(x1, y1, x2, y2):
+    """
+    Вычисляет расстояние между двумя точками на плоскости по формуле расстояния между точками.
+
+    Args:
+    x1 (float): Координата X первой точки
+    y1 (float): Координата Y первой точки
+    x2 (float): Координата X второй точки
+    y2 (float): Координата Y второй точки
+
+    Returns
+        float: Расстояние между точками (длина отрезка)
+    """
+    return math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+x1, y1, x2, y2, x3, y3 = map(float, input('Введите координаты вершин треугольника (x1, y1, x2, y2, x3, y3) через запятую: ').split(','))
+
+def calculate_triangle_area(a, b, c):
+    """
+    Вычисляет площадь треугольника по формуле Герона.
+    Args:
+        a (float): Длина первой стороны
+        b (float): Длина второй стороны
+        c (float): Длина третьей стороны
+
+    Returns:
+        float: Площадь треугольника.
+    """
+    p = (a + b + c) / 2
+    area = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    return area
+
+side_a = calc_distance(x2, y2, x3, y3)
+side_b = calc_distance(x1, y1, x3, y3)
+side_c = calc_distance(x1, y1, x2, y2)
+
+area = calculate_triangle_area(side_a, side_b, side_c)
+
+print(f"Площадь треугольника: {area:.2f}")
