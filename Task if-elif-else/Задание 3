@@ -1,0 +1,8 @@
+month = int(input("Введите порядковый номер месяца: "))
+
+if month == 2:
+    print("Кол-во дней в этом месяце: 28")
+elif month == 4 or month == 6 or month == 9 or month == 11:
+    print("Кол-во дней в этом месяце: 30")
+else:
+    print("Кол-во дней в этом месяце: 31")
