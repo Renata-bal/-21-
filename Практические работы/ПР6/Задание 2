@@ -1,0 +1,31 @@
+n = int(input("Введите число: "))
+
+if n == 0:
+    print("Зелёный")
+
+elif 1 <= n <= 10:
+    if n % 2 == 1:
+        print("Красный")
+    else:
+        print("Чёрный")
+
+elif 11 <= n <= 18:
+    if n % 2 == 0:
+        print("Красный")
+    else:
+        print("Чёрный")
+
+elif 19 <= n <= 28:
+    if n % 2 == 1:
+        print("Красный")
+    else:
+        print("Чёрный")
+
+elif  29 <= n <= 36:
+    if  n % 2 == 0:
+        print("Красный")
+    else:
+        print("Чёрный")
+
+else:
+    print("Ошибка ввода")
